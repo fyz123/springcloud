@@ -1,0 +1,3 @@
+com\cloud\consumer\controller\ConsumerController.class
+com\cloud\consumer\config\ApplicationConfig.class
+com\cloud\consumer\ConsumerApp.class

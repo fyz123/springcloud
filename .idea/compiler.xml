@@ -6,12 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="cosumer80" />
-        <module name="payment8082" />
         <module name="common" />
         <module name="eureka-server-7001" />
         <module name="eureka-server-7002" />
         <module name="payment8081" />
+        <module name="cosumer80" />
+        <module name="payment8082" />
+        <module name="payment-8082" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

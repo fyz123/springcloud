@@ -17,7 +17,7 @@ public class ConsumerController {
     @Resource
     private RestTemplate restTemplate;
 
-    private final String URL = "http://localhost:8081";
+    private final String URL = "http://PAYMENT";
 
     @GetMapping("/consumer/payment/query/{id}")
     public ResponseEntity<CommonResult> query(@PathVariable long id){

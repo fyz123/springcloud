@@ -1,0 +1,9 @@
+server:
+  port: 8084
+
+spring:
+  cloud:
+    zookeeper:
+      connect-string: 36.26.94.156:2181
+  application:
+    name: payment8084

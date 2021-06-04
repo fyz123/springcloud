@@ -12,6 +12,7 @@
         <module name="payment8081" />
         <module name="cosumer80" />
         <module name="payment8082" />
+        <module name="payment8084" />
         <module name="payment-8082" />
       </profile>
     </annotationProcessing>

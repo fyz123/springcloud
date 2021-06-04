@@ -17,6 +17,9 @@
         <module>eureka-server-7002</module>
         <module>payment-8082</module>
         <module>payment8084</module>
+        <module>consumer_zk80</module>
+        <module>payment-consul-8086</module>
+        <module>consumer_consul80</module>
     </modules>
 
     <properties>

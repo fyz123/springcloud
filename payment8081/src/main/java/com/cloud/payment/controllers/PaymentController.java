@@ -1,5 +1,6 @@
 package com.cloud.payment.controllers;
 
+import ch.qos.logback.core.util.TimeUtil;
 import com.cloud.common.entities.CommonResult;
 import com.cloud.common.entities.Payment;
 import com.cloud.payment.service.PaymentService;
@@ -13,6 +14,7 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 @RestController
 @Slf4j
@@ -57,5 +59,15 @@ public class PaymentController {
     @GetMapping("/payment/connect")
     public String testConnect(){
         return "端口号：" + port;
+    }
+
+    @GetMapping("/payment/timeout")
+    public String testTimeout(){
+        try {
+            TimeUnit.SECONDS.sleep(3);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        return "超时接口,端口号：" + port;
     }
 }

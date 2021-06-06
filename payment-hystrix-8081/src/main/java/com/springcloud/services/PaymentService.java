@@ -13,7 +13,8 @@ public class PaymentService {
 
 
     public String isTimeout() throws InterruptedException {
-        TimeUnit.SECONDS.sleep(3);
+        //TimeUnit.SECONDS.sleep(3);
+        //int age = 2/0;
         return "当前线程："+Thread.currentThread().getName()+"调用timeOut方法成功";
     }
 }

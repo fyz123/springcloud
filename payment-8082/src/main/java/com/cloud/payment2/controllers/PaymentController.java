@@ -27,4 +27,9 @@ public class PaymentController {
         return new CommonResult(200,"新增成功",paymentService.save(payment));
     }
 
+    @GetMapping("/payment/connect")
+    public String testConnect(){
+        return "端口号：" + port;
+    }
+
 }

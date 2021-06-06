@@ -54,4 +54,8 @@ public class PaymentController {
         return discoveryClient;
     }
 
+    @GetMapping("/payment/connect")
+    public String testConnect(){
+        return "端口号：" + port;
+    }
 }

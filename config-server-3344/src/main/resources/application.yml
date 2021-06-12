@@ -21,7 +21,7 @@ spring:
           uri: https://github.com/fyz123/springcloud-config-git
           search-paths: config-repo
           username: 1173906808@qq.com
-          password: fyz666666!
+          password: 11111
         default-label: main
 
 logging:

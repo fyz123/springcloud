@@ -18,11 +18,11 @@ spring:
     config:
       server:
         git:
-          uri: git@github.com:fyz123/springcloud-config-git.git #GitHub上面的git仓库名字
-          ####搜索目录
+          uri: https://github.com/fyz123/springcloud-config-git
           search-paths: config-repo
-      ####读取分支
-      label: master
+          username: 1173906808@qq.com
+          password: fyz666666!
+        default-label: main
 
 logging:
   level:

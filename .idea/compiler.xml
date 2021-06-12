@@ -2,18 +2,30 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="common" />
-        <module name="eureka-server-7001" />
-        <module name="eureka-server-7002" />
-        <module name="payment8081" />
-        <module name="cosumer80" />
-        <module name="payment8082" />
-        <module name="payment8084" />
+        <module name="config-server-3344" />
+        <module name="payment-consul-8086" />
         <module name="payment-8082" />
+        <module name="histrix-dashboard" />
+        <module name="cosumer80" />
+        <module name="consumer_consul80" />
+        <module name="payment-hystrix-8081" />
+        <module name="config-client-3355" />
+        <module name="config-client-3366" />
+        <module name="consumer-hystrix-feign80" />
+        <module name="common" />
+        <module name="consumer_Feign80" />
+        <module name="payment8084" />
+        <module name="payment8081" />
+        <module name="consumer_zk80" />
+        <module name="payment8082" />
+        <module name="gateway-9527" />
+        <module name="eureka-server-7002" />
+        <module name="eureka-server-7001" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

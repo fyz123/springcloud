@@ -1,0 +1,27 @@
+server:
+  port: 80
+
+spring:
+  application:
+    name: consumer-histrix-feign-80
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/
+  instance:
+    instance-id: consumerhistrixfeign80
+    prefer-ip-address: true
+
+ribbon:
+  ReadTimeout: 5000
+  ConnectTimeout: 6000
+logging:
+  level:
+    com.springcloud.services.ConsumerService: debug
+
+feign:
+  hystrix:
+    enabled: true

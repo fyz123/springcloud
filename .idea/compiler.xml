@@ -11,6 +11,7 @@
         <module name="payment-consul-8086" />
         <module name="payment-8082" />
         <module name="histrix-dashboard" />
+        <module name="stream-provider-8801" />
         <module name="cosumer80" />
         <module name="consumer_consul80" />
         <module name="payment-hystrix-8081" />

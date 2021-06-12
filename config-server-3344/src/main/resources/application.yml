@@ -1,0 +1,31 @@
+server:
+  port: 3344
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/
+  instance:
+    instance-id: config3344
+    prefer-ip-address: true
+
+spring:
+  application:
+    name: config3344
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/fyz123/springcloud
+          search-paths: springcloud
+          skipSslValidation: true
+          username: fyz123
+          password: fyz666666!
+          force-pull: true
+
+logging:
+  level:
+    com.netflix.discovery: 'OFF'
+    org.springframework.cloud: 'DEBUG'

@@ -25,6 +25,7 @@
         <module>consumer-hystrix-feign80</module>
         <module>histrix-dashboard</module>
         <module>gateway-9527</module>
+        <module>config-server-3344</module>
     </modules>
 
     <properties>

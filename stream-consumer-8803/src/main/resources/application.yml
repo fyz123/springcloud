@@ -1,5 +1,5 @@
 server:
-  port: 8801
+  port: 8803
 
 spring:
   cloud:
@@ -15,12 +15,13 @@ spring:
                 username: guest
                 password: guest
       bindings: #服务的整合处理
-        output: #这个名字是一个通道的名字
+        input: #这个名字是一个通道的名字
           destination: MyExchange #表示要使用的Exchange你名称定义
           content-type: application/json #设置消息类型，本次为json，文本则为"text/plain"
           binder: defaultRabbit #设置要绑定的额消息服务的具体设置
+          #group: consumerGroupA
   application:
-    name: provider8801
+    name: consumer8803
 
 eureka:
   client:
@@ -29,5 +30,5 @@ eureka:
     service-url:
       defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/
   instance:
-    instance-id: provider8801
+    instance-id: consumer8803
     prefer-ip-address: true

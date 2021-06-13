@@ -29,6 +29,8 @@
         <module>config-client-3355</module>
         <module>config-client-3366</module>
         <module>stream-provider-8801</module>
+        <module>stream-consumer-8802</module>
+        <module>stream-consumer-8803</module>
     </modules>
 
     <properties>
